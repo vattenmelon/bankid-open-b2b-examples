@@ -6,7 +6,7 @@ OPENSSL_HOME="/usr/bin"
 ORIGINATOR="BINAS"
 
 # Change to actual common name.
-COMMON_NAME="Merchant B"
+COMMON_NAME="roflmao AS"
 
 AUTH_KEY="${COMMON_NAME}-auth.pem"
 SIGN_KEY="${COMMON_NAME}-sign.pem"
@@ -20,4 +20,4 @@ AUTH_PKCS12="${COMMON_NAME}-${ORIGINATOR}-auth.p12"
 SIGN_PKCS12="${COMMON_NAME}-${ORIGINATOR}-sign.p12"
 
 # This password is used for authentication/signing with the BankID and must be protected!
-KEY_PASSWORD="changeit"
+KEY_PASSWORD="xxxxxxxx"

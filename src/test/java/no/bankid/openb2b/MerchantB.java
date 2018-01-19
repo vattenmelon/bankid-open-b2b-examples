@@ -16,21 +16,21 @@ public class MerchantB extends Merchant {
 
     @Override
     protected String getKeyAlias() {
-        return "signkey";
+        return "1";
     }
 
     @Override
     protected char[] getKeyStorePassword() {
-        return "changeit".toCharArray();
+        return "xxxx".toCharArray();
     }
 
     @Override
     protected URL getKeyStoreUrl() {
-        return MerchantB.class.getResource("/Merchant B.jks");
+        return MerchantB.class.getResource("/roflmao AS-BINAS-sign.p12");
     }
 
     @Override
     protected char[] getKeyPassword() {
-        return "changeit".toCharArray();
+        return "xxx".toCharArray();
     }
 }

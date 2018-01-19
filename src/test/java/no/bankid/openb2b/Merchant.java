@@ -32,7 +32,12 @@ abstract class Merchant {
     protected abstract char[] getKeyPassword();
 
     private KeyStore getKeyStore() throws Exception {
-        KeyStore keyStore = KeyStore.getInstance("JKS");
+        KeyStore keyStore = null;
+        if (this instanceof MerchantA) {
+            keyStore = KeyStore.getInstance("JKS");
+        }else{
+            keyStore = KeyStore.getInstance("PKCS12");
+        }
         try (InputStream inputStream = getKeyStoreUrl().openStream()) {
             keyStore.load(inputStream, getKeyStorePassword());
         }
